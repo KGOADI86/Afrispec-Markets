@@ -1,14 +1,84 @@
-<section id="categories">
-    <h2>Product Categories</h2>
-    <p>Coming soon: Browse products by category like Tech, Home, Fashion, and more.</p>
-</section>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-<section id="about">
-    <h2>About Afrispec Markets</h2>
-    <p>Afrispec Markets brings you quality products from trusted suppliers across Africa and beyond.</p>
-</section>
+header {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 30px 15px 15px 15px;
+}
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions? Reach out at <a href="mailto:info@afrispecmarkets.com">info@afrispecmarkets.com</a></p>
-</section>
+.logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 10px 0 5px;
+    font-size: 2.2em;
+}
+
+nav {
+    background-color: #004d00;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #006400;
+    text-align: center;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    color: #006400;
+    font-size: 1.3em;
+}
+
+footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
