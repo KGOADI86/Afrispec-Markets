@@ -1,81 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Afrispec Markets is your go-to agricultural trading hub in Africa.">
-    <meta name="keywords" content="agriculture, Africa, markets, trade, Afrispec">
-    <meta name="author" content="Afrispec Markets Team">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afrispec Markets</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Afrispec Markets",
-      "url": "https://kgoadi86.github.io/Afrispec-Markets/",
-      "description": "Discover top market products for everyday life in Africa.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Afrispec Markets"
-      }
-    }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="description" content="Afrispec Markets is your go-to agricultural trading hub in Africa.">
+  <meta name="keywords" content="agriculture, Africa, markets, trade, Afrispec">
+  <meta name="author" content="Afrispec Markets Team">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afrispec Markets</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- Sticky Header CSS -->
-    <style>
-      #navbar {
-        position: sticky;
-        top: 0;
-        background-color: #333;
-        z-index: 1000;
-        padding: 10px;
-      }
-      #navbar ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 20px;
-      }
-      #navbar li {
-        display: inline;
-      }
-      #navbar a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-      }
-      .product {
-        border: 1px solid #ddd;
-        padding: 20px;
-        margin: 10px;
-        text-align: center;
-      }
-      .product img {
-        max-width: 100%;
-        height: auto;
-      }
-      .cta-button {
-        background-color: #007bff;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-      }
-      .cta-button:hover {
-        background-color: #0056b3;
-      }
-    </style>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Afrispec Markets",
+    "url": "https://kgoadi86.github.io/Afrispec-Markets/",
+    "description": "Discover top market products for everyday life in Africa.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Afrispec Markets"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
-  <!-- Main Navigation -->
+  <!-- Navigation Bar -->
   <header id="navbar">
     <nav>
       <ul class="nav-menu">
@@ -89,37 +43,43 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home">
+  <section id="home" class="hero">
     <img src="images/product1.jpg" loading="lazy" alt="Organic Maize">
     <h1>Welcome to Afrispec Markets</h1>
     <p>Discover top market products for everyday life in Africa.</p>
   </section>
 
-  <!-- Featured Products Section -->
-  <section id="products">
-    <h2>Featured Products</h2>
+  <!-- Featured Products -->
+  <main>
+    <section id="products">
+      <h2>Featured Products</h2>
 
-    <article class="product">
-      <img src="echo-dot.jpg" alt="Echo Dot (3rd Gen)">
-      <h3>
-        <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" target="_blank">
-          Echo Dot (3rd Gen)
-        </a>
-      </h3>
-      <p>Smart speaker with Alexa – great sound and voice control.</p>
-      <p><strong>$49.99</strong></p>
-      <a href="https://www.amazon.com" class="cta-button">Buy Now</a>
-    </article>
+      <article class="product">
+        <img src="images/echo-dot.jpg" alt="Echo Dot (3rd Gen)">
+        <h3>
+          <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" target="_blank">
+            Echo Dot (3rd Gen)
+          </a>
+        </h3>
+        <p>Smart speaker with Alexa – great sound and voice control.</p>
+        <p><strong>$49.99</strong></p>
+        <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" class="cta-button">Buy Now</a>
+      </article>
 
-    <article class="product">
-      <h3>
-        <a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" target="_blank">
-          Fire HD 10 Tablet
-        </a>
-      </h3>
-      <p>Portable tablet for browsing, reading, and entertainment on the go.</p>
-    </article>
-  </section>
+      <article class="product">
+        <img src="images/fire-hd.jpg" alt="Fire HD 10 Tablet">
+        <h3>
+          <a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" target="_blank">
+            Fire HD 10 Tablet
+          </a>
+        </h3>
+        <p>Portable tablet for browsing, reading, and entertainment on the go.</p>
+        <p><strong>$149.99</strong></p>
+        <a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" class="cta-button">Buy Now</a>
+      </article>
+
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
@@ -129,3 +89,4 @@
 
 </body>
 </html>
+
