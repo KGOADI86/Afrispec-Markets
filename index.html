@@ -1,170 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Afrispec Markets is your go-to agricultural trading hub in Africa.">
-<meta name="keywords" content="agriculture, Africa, markets, trade, Afrispec">
-<meta name="author" content="Afrispec Markets Team">
     <meta charset="UTF-8">
+    <meta name="description" content="Afrispec Markets is your go-to agricultural trading hub in Africa.">
+    <meta name="keywords" content="agriculture, Africa, markets, trade, Afrispec">
+    <meta name="author" content="Afrispec Markets Team">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afrispec Markets</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
     <!-- JSON-LD Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Afrispec Markets",
-  "url": "https://kgoadi86.github.io/Afrispec-Markets/",
-  "description": "Discover top market products for everyday life in Africa.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Afrispec Markets"
-  }
-}
-</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Afrispec Markets",
+      "url": "https://kgoadi86.github.io/Afrispec-Markets/",
+      "description": "Discover top market products for everyday life in Africa.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Afrispec Markets"
+      }
+    }
+    </script>
+
+    <!-- Sticky Header CSS -->
+    <style>
+      #navbar {
+        position: sticky;
+        top: 0;
+        background-color: #333;
+        z-index: 1000;
+        padding: 10px;
+      }
+      #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+      }
+      #navbar li {
+        display: inline;
+      }
+      #navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .product {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+      }
+      .product img {
+        max-width: 100%;
+        height: auto;
+      }
+      .cta-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .cta-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
 </head>
+
 <body>
+
+  <!-- Main Navigation -->
+  <header id="navbar">
     <nav>
-  <ul class="nav-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="products.html">Products</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-
-    <header>
-        <img src="images/product1.jpg" loading="lazy" alt="Organic Maize">
-        <h1>Welcome to Afrispec Markets</h1>
-        <p>Discover top market products for everyday life in Africa.</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Tech</a></li>
-            <li><a href="#">Home Goods</a></li>
-            <li><a href="#">Books</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tech">Tech</a></li>
+        <li><a href="#homegoods">Home Goods</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <section>
-        <h2>Featured Products</h2>
+  <!-- Hero Section -->
+  <section id="home">
+    <img src="images/product1.jpg" loading="lazy" alt="Organic Maize">
+    <h1>Welcome to Afrispec Markets</h1>
+    <p>Discover top market products for everyday life in Africa.</p>
+  </section>
 
-        <div class="product">
-            <h3>
-                <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" target="_blank">
-                    Echo Dot (3rd Gen) – Smart speaker with Alexa
-                </a>
-            </h3>
-            <p>A great smart speaker with voice control and powerful sound.</p>
-        </div>
+  <!-- Featured Products Section -->
+  <section id="products">
+    <h2>Featured Products</h2>
 
-        <div class="product">
-            <h3>
-                <a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" target="_blank">
-                    Fire HD 10 Tablet
-                </a>
-            </h3>
-            <p>Portable tablet for browsing, reading, and entertainment on the go.</p>
-        </div>
-    </section>
+    <article class="product">
+      <img src="echo-dot.jpg" alt="Echo Dot (3rd Gen)">
+      <h3>
+        <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" target="_blank">
+          Echo Dot (3rd Gen)
+        </a>
+      </h3>
+      <p>Smart speaker with Alexa – great sound and voice control.</p>
+      <p><strong>$49.99</strong></p>
+      <a href="https://www.amazon.com" class="cta-button">Buy Now</a>
+    </article>
 
-    <footer>
-        <p><strong>Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases.</p>
-        <p>&copy; 2025 Afrispec Markets. All rights reserved.</p>
-    </footer>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <article class="product">
+      <h3>
+        <a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" target="_blank">
+          Fire HD 10 Tablet
+        </a>
+      </h3>
+      <p>Portable tablet for browsing, reading, and entertainment on the go.</p>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases.</p>
+    <p>&copy; 2025 Afrispec Markets. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-.nav-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .nav-menu {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-<!-- Updated Navigation Bar -->
-<nav id="navbar">
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#tech">Tech</a></li>
-    <li><a href="#homegoods">Home Goods</a></li>
-    <li><a href="#books">Books</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- Sticky Header CSS -->
-<style>
-  #navbar {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    z-index: 1000;
-  }
-  #navbar ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  #navbar li {
-    display: inline;
-    margin-right: 20px;
-  }
-  #navbar a {
-    color: white;
-    text-decoration: none;
-  }
-</style>
-<!-- Product Listing Example -->
-<div class="product">
-  <img src="echo-dot.jpg" alt="Echo Dot (3rd Gen)">
-  <h3>Echo Dot (3rd Gen)</h3>
-  <p>Smart speaker with Alexa – great sound and voice control.</p>
-  <p><strong>$49.99</strong></p>
-  <a href="https://www.amazon.com" class="cta-button">Buy Now</a>
-</div>
-
-<!-- CSS for Product Listings -->
-<style>
-  .product {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-  }
-  .product img {
-    max-width: 100%;
-    height: auto;
-  }
-  .cta-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  .cta-button:hover {
-    background-color: #0056b3;
-  }
-</style>
-
