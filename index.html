@@ -89,4 +89,36 @@
     align-items: flex-start;
   }
 }
+<!-- Updated Navigation Bar -->
+<nav id="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#tech">Tech</a></li>
+    <li><a href="#homegoods">Home Goods</a></li>
+    <li><a href="#books">Books</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Sticky Header CSS -->
+<style>
+  #navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+  }
+  #navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  #navbar li {
+    display: inline;
+    margin-right: 20px;
+  }
+  #navbar a {
+    color: white;
+    text-decoration: none;
+  }
+</style>
 
