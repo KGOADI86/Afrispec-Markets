@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Afrispec Markets is your go-to agricultural trading hub in Africa.">
-  <meta name="keywords" content="agriculture, Africa, markets, trade, Afrispec">
-  <meta name="author" content="Afrispec Markets Team">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Afrispec Markets</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop everyday tech and home goods tailored for Africa. Discover affordable and trusted Amazon products curated for African households." />
+  <meta name="keywords" content="Africa, Agriculture, Technology, Amazon, Afrispec Markets, trade" />
+  <meta name="author" content="Afrispec Markets Team" />
+  <title>Afrispec Markets – Africa's Trusted Product Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
-  <!-- Structured Data -->
+  <!-- Structured Data for SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -25,13 +25,22 @@
     }
   }
   </script>
+
+  <!-- Google Analytics (replace with real ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 
 <body>
 
-  <!-- Navigation Bar -->
-  <header id="navbar">
-    <nav>
+  <!-- Navigation -->
+  <header id="navbar" role="banner">
+    <nav role="navigation" aria-label="Main Navigation">
       <ul class="nav-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#tech">Tech</a></li>
@@ -44,45 +53,45 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <img src="images/product1.jpg" loading="lazy" alt="Organic Maize">
+    <img src="images/product1.jpg" loading="lazy" alt="Organic Maize" />
     <h1>Welcome to Afrispec Markets</h1>
     <p>Discover top market products for everyday life in Africa.</p>
   </section>
 
-  <!-- Featured Products -->
-  <main>
-    <section id="products">
-      <h2>Featured Products</h2>
+  <!-- Product Section -->
+  <main role="main" id="products">
+    <section aria-labelledby="featured-products">
+      <h2 id="featured-products">Featured Products</h2>
 
-      <article class="product">
-        <img src="images/echo-dot.jpg" alt="Echo Dot (3rd Gen)">
+      <article class="product" id="tech">
+        <img src="images/echo-dot.jpg" alt="Echo Dot (3rd Gen)" loading="lazy" />
         <h3>
-          <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" target="_blank">
+          <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" target="_blank" rel="noopener">
             Echo Dot (3rd Gen)
           </a>
         </h3>
         <p>Smart speaker with Alexa – great sound and voice control.</p>
         <p><strong>$49.99</strong></p>
-        <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" class="cta-button">Buy Now</a>
+        <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" class="cta-button" target="_blank">Buy Now</a>
       </article>
 
-      <article class="product">
-        <img src="images/fire-hd.jpg" alt="Fire HD 10 Tablet">
+      <article class="product" id="homegoods">
+        <img src="images/fire-hd.jpg" alt="Fire HD 10 Tablet" loading="lazy" />
         <h3>
-          <a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" target="_blank">
+          <a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" target="_blank" rel="noopener">
             Fire HD 10 Tablet
           </a>
         </h3>
         <p>Portable tablet for browsing, reading, and entertainment on the go.</p>
         <p><strong>$149.99</strong></p>
-        <a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" class="cta-button">Buy Now</a>
+        <a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" class="cta-button" target="_blank">Buy Now</a>
       </article>
 
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer role="contentinfo">
     <p><strong>Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases.</p>
     <p>&copy; 2025 Afrispec Markets. All rights reserved.</p>
   </footer>
