@@ -29,43 +29,64 @@
 <body>
 
   <!-- Navigation -->
-  <header id="navbar">
+  <header class="navbar">
+    <div class="logo">Afrispec</div>
     <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <ul class="nav-menu" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <main>
- <section class="hero">
-  <h1>Welcome to Afrispec Markets</h1>
-  <p>Discover affordable, quality, culturally inspired products.</p>
-  <a href="products.html" class="cta">Browse Products</a>
-</section>
+    <section class="hero" id="home">
+      <h1>Welcome to Afrispec Markets</h1>
+      <p>Discover affordable, quality, culturally inspired products.</p>
+      <a href="#products" class="cta">Browse Products</a>
+    </section>
 
-    <!-- Featured Products -->
-    <section class="products">
+    <!-- Products Section -->
+    <section class="products" id="products">
       <h2>Featured Products</h2>
 
-      <article class="product">
-        <img src="images/echo-dot.jpg" alt="Echo Dot (3rd Gen)" loading="lazy" />
-        <h3><a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" target="_blank">Echo Dot (3rd Gen)</a></h3>
-        <p>Smart speaker with Alexa – control your home and music hands-free.</p>
-        <p><strong>$49.99</strong></p>
-        <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" class="cta-button" target="_blank">Buy Now</a>
-      </article>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/echo-dot.jpg" alt="Echo Dot (3rd Gen)" />
+          <h3><a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" target="_blank">Echo Dot (3rd Gen)</a></h3>
+          <p>Smart speaker with Alexa – control your home and music hands-free.</p>
+          <p><strong>$49.99</strong></p>
+          <a href="https://www.amazon.com/dp/B07FZ8S74R?tag=yourtag-20" target="_blank" class="cta-button">Buy Now</a>
+        </div>
 
-      <article class="product">
-        <img src="images/fire-hd.jpg" alt="Fire HD 10 Tablet" loading="lazy" />
-        <h3><a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" target="_blank">Fire HD 10 Tablet</a></h3>
-        <p>Fast and portable tablet for reading, browsing, and streaming.</p>
-        <p><strong>$149.99</strong></p>
-        <a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" class="cta-button" target="_blank">Buy Now</a>
-      </article>
+        <div class="product-card">
+          <img src="images/fire-hd.jpg" alt="Fire HD 10 Tablet" />
+          <h3><a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" target="_blank">Fire HD 10 Tablet</a></h3>
+          <p>Fast and portable tablet for reading, browsing, and streaming.</p>
+          <p><strong>$149.99</strong></p>
+          <a href="https://www.amazon.com/dp/B089KV4YYX?tag=yourtag-20" target="_blank" class="cta-button">Buy Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form action="mailto:you@example.com" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
     </section>
   </main>
 
@@ -75,20 +96,12 @@
     <p>&copy; 2025 Afrispec Markets. All rights reserved.</p>
   </footer>
 
+  <!-- JavaScript for mobile menu -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
-<div class="product-card">
-  <img src="images/product1.jpg" alt="Product 1">
-  <h3>Product Name</h3>
-  <p>Short product description</p>
-  <a href="https://amazon.com/product?tag=affiliate123" target="_blank">View on Amazon</a>
-</div>
-<form action="mailto:you@example.com" method="POST">
-  <label>Name</label><input type="text" required>
-  <label>Email</label><input type="email" required>
-  <label>Message</label><textarea required></textarea>
-  <button type="submit">Send</button>
-</form>
-<meta name="description" content="Afrispec Market - Culturally inspired affiliate shopping platform.">
-<meta name="keywords" content="African products, affiliate, culture, online market">
-<meta name="author" content="Afrispec Markets">
