@@ -2236,4 +2236,24 @@ form button {
   color: white;
   border: none;
 }
+@media (max-width: 768px) {
+  #featured-products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .product-list {
+    flex-direction: column;
+  }
+
+  .product-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
 
