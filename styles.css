@@ -2191,4 +2191,24 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+#products {
+  padding: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-item {
+  width: 45%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+}
 
